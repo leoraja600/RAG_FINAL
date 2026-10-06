@@ -1,0 +1,73 @@
+:root {
+  /* Core Backgrounds */
+  --bg-app: #090B10;
+  --bg-sidebar: #0F131C;
+  --bg-card: #141A26;
+  --bg-input: #1C2333;
+  --bg-input-focus: #222B3F;
+  
+  /* Accents & Gradients */
+  --accent-purple: #7B61FF;
+  --accent-blue: #00C2FF;
+  --accent-green: #00E676;
+  --accent-red: #FF416C;
+  --gradient-hero: linear-gradient(135deg, var(--accent-purple) 0%, var(--accent-blue) 100%);
+  --gradient-card: linear-gradient(180deg, rgba(20, 26, 38, 0.8) 0%, rgba(15, 19, 28, 0.9) 100%);
+  
+  /* Typography */
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  --text-tertiary: #64748B;
+  
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(123, 97, 255, 0.5);
+  --shadow-glow: 0 0 20px rgba(123, 97, 255, 0.15);
+  
+  /* Sizes */
+  --sidebar-width: 280px;
+  --header-height: 70px;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Utilities */
+.glass-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.gradient-text {
+  background: var(--gradient-hero);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-input);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}

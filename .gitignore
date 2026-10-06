@@ -1,0 +1,9 @@
+.env
+__pycache__/
+*.pyc
+data/eki.db
+data/qdrant/
+.venv/
+.hf_cache/
+qdrant/
+.xet/
